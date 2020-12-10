@@ -15,17 +15,10 @@ const Footer = props => (
       </a>
     </div>
     <p className="footer__copyright dark-white">      
-      <a href="https://d2iq.com/" target="_blank" rel="noopener noreferrer">
-        D2iQ
-      </a>
-      <a
-        href="https://twitter.com/d2iq"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="footer__link"
-      >
-        Twitter
-      </a>
+      Based on <a href="https://gitexplorer.com/" target="_blank" rel="noopener noreferrer">GitExplorer</a> by{' '}
+      <a href="https://www.summitech.ng" target="_blank" rel="noopener noreferrer">
+        Summitech
+      </a>    
     </p>
   </footer>
 );
