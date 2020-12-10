@@ -21,7 +21,7 @@ const options = [
   { value: 'reset', label: 'reset any modifications to the nodes made by the installer, and cleanup file artifacts' },
   { value: 'scale', label: 'changes the node pool\'s number of machines in the cluster configuration' },
   { value: 'uncordon', label: 'Marks nodes in the node pool as schedulable' },
-  { value: 'up', label: 'provision a cluster' },
+  { value: 'up', label: 'create or update a Kubernetes cluster' },
   { value: 'view', label: 'view various artifacts' },
   { value: 'preflight', label: 'validate machines are ready for installation' },
 ];
