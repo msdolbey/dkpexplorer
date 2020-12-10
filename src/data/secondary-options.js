@@ -127,7 +127,7 @@ export const secondaryOptions = {
       usage: 'konvoy provision',
     }
   ],
-   
+
   pull: [
     {
       value: 'yes',
@@ -173,7 +173,7 @@ export const secondaryOptions = {
       usage: 'konvoy up -y'
     },
   ],
-  
+
   view: [
     {
       value: 'yes',
@@ -181,5 +181,5 @@ export const secondaryOptions = {
       usage: 'konvoy view',
     }
   ],
-  
+
 };
