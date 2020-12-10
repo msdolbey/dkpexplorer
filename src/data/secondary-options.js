@@ -361,12 +361,6 @@ export const secondaryOptions = {
       label: 'and skip installing the auto provisioner',
       usage: 'konvoy up --without-auto-provisioning'
     },
-    {
-      value: 'without-draining',
-      label: 'and run an upgrade on all nodes requiring an upgrade, without draining the nodes first',
-      usage: 'konvoy up --without-draining',
-      nb: 'Requires --upgrade or --force-upgrade flag. (WARNING! usage can result in undefined behavior and service downtime).'
-    }
   ],
 
   view: [
