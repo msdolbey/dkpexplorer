@@ -14,7 +14,7 @@ const options = [
   { value: 'generate', label: 'generates artifacts' },
   { value: 'get', label: 'get cluster related information' },
   { value: 'image', label: 'run Konvoy CLI images related actions' },
-  { value: 'init', label: 'create the provision and deploy configuration with default values' },
+  { value: 'init', label: 'create a provision and deploy configuration' },
   { value: 'provision', label: 'provision the nodes according to the provided Terraform variables file' },
   { value: 'pull', label: 'pull cluster state' },
   { value: 'push', label: 'push cluster state' },
