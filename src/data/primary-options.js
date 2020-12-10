@@ -1,5 +1,5 @@
 const options = [
-  { value: 'apply', label: 'update certain configurations in the existing kubeconfig file' },
+  { value: 'apply', label: 'Update an existing kubeconfig file.' },
   { value: 'check', label: 'check on the health of the cluster' },
   { value: 'completion', label: 'check the output of the shell completion code for the specified shell (bash or zsh)' },
   { value: 'config', label: 'manage installation related configuration' },

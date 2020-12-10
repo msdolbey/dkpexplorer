@@ -3,8 +3,10 @@ export const secondaryOptions = {
   apply: [
     {
       value: 'yes',
-      label: 'without further prompts',
-      usage: 'konvoy apply',
+      label: 'Update kubeconfig and activate',
+      usage: 'konvoy apply kubeconfig [flags]',
+      nb: 'Updates kubeconfig and activate the current context with the installed cluster.'
+          + '\n\n --force-overwrite flag overwrites the existing user/context/cluster entries in local kubeconfig'
     }
   ],
 
