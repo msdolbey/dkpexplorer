@@ -7,28 +7,19 @@ Table of Contents
 
 [Installation](https://github.com/natmegs/gitexplorer/blob/master/README.md#installation)
 
-[Makers](https://github.com/natmegs/gitexplorer/blob/master/README.md#makers)
-
 [Contribute](https://github.com/natmegs/gitexplorer/blob/master/README.md#contribute)
 
-[Donate](https://github.com/natmegs/gitexplorer/blob/master/README.md#donate)
-
-[RoadMap](https://github.com/natmegs/gitexplorer/blob/master/README.md#roadmap)
+[Makers](https://github.com/natmegs/gitexplorer/blob/master/README.md#makers)
 
 ### Intro
 At Corona Hackathon, we came across git explorer: [Click to find the right git commands without digging through the web.](https://gitexplorer.com). This was based on [Sarah Drasner's array explorer](https://github.com/sdras/array-explorer). It is a really cool resource for anyone to easily figure out the best JS array method to use. We loved it and decided to build something similar for Konvoy.
 
 Explore and Enjoy! 
 
-You can reach the gitexplorer crew on [the official git explorer twitter handle](https://twitter.com/gitexplorer) or on [Summitech's twitter handle](https://twitter.com/summitechng).
-
-
 ### Tech Stack
 
 - React
 - Netlify
-- Our first hosting platform was [Surge](https://surge.sh). Super easy to set up and very reliable :+1:. 100% recommend!
-
 
 ### Installation
 ```
@@ -43,11 +34,9 @@ To try KonvoyExplorer in a docker container, run this:
 docker-compose up
 ```
 
-### Makers of GitExplorer
-Awesome devs and designer at [Summitech](https://summitech.ng)
+### Contribute
 
-### Contribute to GitExplorer
-Thank you for contributing to GitExplorer!
+Thank you for contributing to KonvoyExplorer!
 
 Please follow the below instructions to send a Pull Request (Search the website to make sure that this command doesn't already exist).
 
@@ -125,8 +114,6 @@ show: [
 
 4. Once you are done, add, commit, push and create a PR to Master.
 
-### Donate to GitExplorer
+### Makers of GitExplorer
 
- You can also contribute to the continued success of the project via donation. Please click this [link](https://rave.flutterwave.com/donate/bavfmdlomzs2).
-
-### RoadMap
+KonvoyExplorer is based on GitExplorer which is made by the awesome devs and designer at [Summitech](https://summitech.ng)

@@ -1,5 +1,5 @@
 const options = [
-  { value: 'apply', label: 'update certain configurations in the existing kubeconfig file' },
+  { value: 'apply', label: 'update konvoy cluster configuration in kubeconfig file' },
   { value: 'check', label: 'check on the health of the cluster' },
   { value: 'completion', label: 'check the output of the shell completion code for the specified shell (bash or zsh)' },
   { value: 'config', label: 'manage installation related configuration' },
@@ -14,15 +14,16 @@ const options = [
   { value: 'generate', label: 'generates artifacts' },
   { value: 'get', label: 'get cluster related information' },
   { value: 'image', label: 'run Konvoy CLI images related actions' },
-  { value: 'init', label: 'create the provision and deploy configuration with default values' },
+  { value: 'init', label: 'create a provision and deploy configuration' },
   { value: 'provision', label: 'provision the nodes according to the provided Terraform variables file' },
   { value: 'pull', label: 'pull cluster state' },
   { value: 'push', label: 'push cluster state' },
   { value: 'reset', label: 'reset any modifications to the nodes made by the installer, and cleanup file artifacts' },
   { value: 'scale', label: 'changes the node pool\'s number of machines in the cluster configuration' },
   { value: 'uncordon', label: 'Marks nodes in the node pool as schedulable' },
-  { value: 'up', label: 'provision a cluster' },
+  { value: 'up', label: 'create or update a Kubernetes cluster' },
   { value: 'view', label: 'view various artifacts' },
+  { value: 'preflight', label: 'validate machines are ready for installation' },
 ];
 
 export const primaryOptions = options.sort((x, y) => {
