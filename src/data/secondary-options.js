@@ -254,6 +254,7 @@ export const secondaryOptions = {
       usage: 'konvoy scale',
     }
   ],
+
   uncordon: [
     {
       value: 'yes',
@@ -261,6 +262,7 @@ export const secondaryOptions = {
       usage: 'konvoy uncordon',
     }
   ],
+
   up: [
     {
       value: 'default',
@@ -369,10 +371,17 @@ export const secondaryOptions = {
 
   view: [
     {
-      value: 'yes',
-      label: 'without further prompts',
-      usage: 'konvoy view',
-    }
+      value: 'view-service-account',
+      label: 'and create a kubeconfig for the cluster for certain namespaces',
+      usage: 'konvoy view serviceaccount-kubeconfig <serviceaccount-namespace>',
+      nb: 'replace <serviceaccount-namespace> with the namespace of your serviceaccount',
+    },
+    {
+      value: 'view-service-account-verbose',
+      label: 'and create a kubeconfig for the cluster for certain namespaces and enable debug level logging',
+      usage: 'konvoy view serviceaccount-kubeconfig <serviceaccount-namespace> --verbose',
+      nb: 'replace <serviceaccount-namespace> with the namespace of your serviceaccount',
+    },
   ],
 
   preflight: [
