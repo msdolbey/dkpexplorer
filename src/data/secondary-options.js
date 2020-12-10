@@ -161,9 +161,63 @@ export const secondaryOptions = {
 
   provision: [
     {
-      value: 'yes',
-      label: 'without further prompts',
+      value: 'default',
+      label: 'with default values',
       usage: 'konvoy provision',
+    },
+    {
+      value: 'yes',
+      label: 'without further prompting',
+      usage: 'konvoy provision --yes'
+    },
+    {
+      value: 'force-push',
+      label: 'and force push the cluster state',
+      usage: 'konvoy provision --force-push'
+    },
+    {
+      value: 'force-reduce-control-plane',
+      label: 'and allow a reduction of number of control plane nodes',
+      usage: 'konvoy provision --force-reduce-control-plane'
+    },
+    {
+      value: 'plan-only',
+      label: 'and show planned changes but not actually provision',
+      usage: 'konvoy provision --plan-only'
+    },
+    {
+      value: 'skip-provisioning-retry',
+      label: 'and skip retrying the provisioning stage in case of errors',
+      usage: 'konvoy provision --skip-provisioning-retry'
+    },
+    {
+      value: 'skip-state-upload',
+      label: 'and skip uploading the state to the Kubernetes cluster',
+      usage: 'konvoy provision --skip-state-upload'
+    },
+    {
+      value: 'addons-repositories',
+      label: 'with specific addon repositories',
+      usage: 'konvoy provision --addons-repositories repo1,repo2',
+      nb: 'Provide a comma separated list of addons repositories with uri@version (default [https://github.com/mesosphere/kubeaddons-kommander@stable-1.18-1.2.0,https://github.com/mesosphere/kubeaddons-dispatch@stable-1.18-1.3.0,https://github.com/mesosphere/kubernetes-base-addons@stable-1.18-3.0.0])'
+    },
+    {
+      value: 'cluster-name',
+      label: 'with a cluster name',
+      usage: 'konvoy provision --cluster-name <clustername>',
+      nb: 'Provide a name that will be used to prefix the cluster and all the created resources. The default value if not provided is "konvoy".'
+    },
+    {
+      value: 'provisioner',
+      label: 'with a non-default provisioner type',
+      usage: 'konvoy provision --provisioner <aws|azure|gcp|docker|none>',
+      nb: 'The default value if not provided is "aws".'
+    },
+    {
+      value: 'verbose',
+      label: 'with logs',
+      usage: 'konvoy provision --verbose',
+      nb: "Enables debug level logging"
     }
   ],
 
