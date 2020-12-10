@@ -36,7 +36,18 @@ class App extends Component {
   };
 
   onFirstChange = (selectedOption) => {
-    if (this.state.secondOption) {
+    if (selectedOption.usage) {
+      this.setState({ nb: '', usage: '' }, () => {
+        this.setState({
+          firstOption: selectedOption,
+          secondOption: null,
+          showThird: false,
+          nb: selectedOption.nb,
+          usage: selectedOption.usage,
+          thirdOption: null
+        });
+      });
+    } else if (this.state.secondOption) {
       this.setState({
         firstOption: selectedOption,
         showSecond: true,
