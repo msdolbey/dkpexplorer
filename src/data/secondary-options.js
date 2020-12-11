@@ -139,7 +139,10 @@ export const secondaryOptions = {
       value: 'addons-repositories',
       label: 'with specific addon repositories',
       usage: 'konvoy init --addons-repositories repo1,repo2',
-      nb: 'Provide a comma separated list of addons repositories with uri@version (default [https://github.com/mesosphere/kubeaddons-kommander@stable-1.18-1.2.0,https://github.com/mesosphere/kubeaddons-dispatch@stable-1.18-1.3.0,https://github.com/mesosphere/kubernetes-base-addons@stable-1.18-3.0.0])'
+      nb: 'Provide a comma separated list of addons repositories with uri@version \n(default'
+          + ' [https://github.com/mesosphere/kubeaddons-kommander@stable-1.18-1.2.0,'
+          + 'https://github.com/mesosphere/kubeaddons-dispatch@stable-1.18-1.3.0,'
+          + 'https://github.com/mesosphere/kubernetes-base-addons@stable-1.18-3.0.0])'
     },
     {
       value: 'cluster-name',
