@@ -1,4 +1,4 @@
-# KonvoyExplorer
+# DKPExplorer
 Table of Contents
 
 [Intro](https://github.com/msdolbey/dkpexplorer#intro)
@@ -14,6 +14,7 @@ Table of Contents
 [RoadMap](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#roadmap)
 
 ### Intro
+
 At a D2iQ Hackathon, we came across git explorer: [Click to find the right git commands without digging through the web.](https://gitexplorer.com). This was based on [Sarah Drasner's array explorer](https://github.com/sdras/array-explorer). It is a really cool resource for anyone to easily figure out the best JS array method to use. We loved it and decided to build something similar for Konvoy. And now DKP.
 
 Explore and Enjoy! 
@@ -57,13 +58,13 @@ These three files are responsible for the options a user can pick.
 
 1.  Add an object to the array in the `primary-options.js` file. Sample Format:
 
-    ```
+    ```js
     { value: 'show', label: 'show/view' }
     ```
 
 1.  Add an array to the `secondary-options` file. Sample Format:
 
-    ```
+    ```js
     show: [
         {
           value: 'repo-status',
@@ -80,41 +81,41 @@ These three files are responsible for the options a user can pick.
     The `nb` is optional. It is responsible for what the user sees in the notes section. 
 
     `\n` is used to insert newline.
-  
-1.  To add tertiary options, remove the `usage` and `nb` key/value pair for that command in the `secondary-options.js` file e.g..
-  
-    ```
+
+1.  To add tertiary options, remove the `usage` and `nb` key/value pair for that command in the `secondary-options.js` file, e.g.:
+
+    ```js
     show: [
         {
           value: 'logs',
           label: 'commit logs/history'
         },
-   ```
+    ```
 
-   then supply `tertiary-options.js` file the necessary data e.g.
+    And, then supply `tertiary-options.js` file the necessary data, e.g.:
 
-   ```
-   logs: [
-     {
-       value: 'all',
-       label: 'all',
-       usage: 'git log',
-       nb: 'Type q in the terminal to exit the logs'
-     },
-     {
-       value: 'last-n-commit',
-       label: 'for last xxx number of commits',
-       usage: 'git log -n',
-       nb: 'Replace n with number of commits e.g. git log -2'
-     },
-     {
-       value: 'particular-period',
-       label: 'since a particular period',
-       usage: 'git log --since=period',
-       nb: 'Replace period with intended timeframe e.g git log --since=3days. You can use dates like 2018-12-31.\n\n Similar flags are --until, --before, --after'
-     }
-   ]
-   ```
+    ```js
+    logs: [
+      {
+        value: 'all',
+        label: 'all',
+        usage: 'git log',
+        nb: 'Type q in the terminal to exit the logs'
+      },
+      {
+        value: 'last-n-commit',
+        label: 'for last xxx number of commits',
+        usage: 'git log -n',
+        nb: 'Replace n with number of commits e.g. git log -2'
+      },
+      {
+        value: 'particular-period',
+        label: 'since a particular period',
+        usage: 'git log --since=period',
+        nb: 'Replace period with intended timeframe e.g git log --since=3days. You can use dates like 2018-12-31.\n\n Similar flags are --until, --before, --after'
+      }
+    ]
+    ```
 
 1.  Once you are done, add, commit, push and create a PR to Master.
 
@@ -127,4 +128,3 @@ KonvoyExplorer is based on GitExplorer which is made by the awesome devs and des
 Update everything to DKP
 Add the ability to add as many flags as possible
 Think about a way to not allow people to use conflicting flags that are not allowed in the product.
-
