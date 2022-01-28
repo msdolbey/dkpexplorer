@@ -7,9 +7,13 @@ Table of Contents
 
 [Installation](https://github.com/natmegs/gitexplorer/blob/master/README.md#installation)
 
+[Makers](https://github.com/natmegs/gitexplorer/blob/master/README.md#makers)
+
 [Contribute](https://github.com/natmegs/gitexplorer/blob/master/README.md#contribute)
 
-[Makers](https://github.com/natmegs/gitexplorer/blob/master/README.md#makers)
+[Donate](https://github.com/natmegs/gitexplorer/blob/master/README.md#donate)
+
+[RoadMap](https://github.com/natmegs/gitexplorer/blob/master/README.md#roadmap)
 
 ### Intro
 At Corona Hackathon, we came across git explorer: [Click to find the right git commands without digging through the web.](https://gitexplorer.com). This was based on [Sarah Drasner's array explorer](https://github.com/sdras/array-explorer). It is a really cool resource for anyone to easily figure out the best JS array method to use. We loved it and decided to build something similar for Konvoy.
