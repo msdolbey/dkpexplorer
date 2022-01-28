@@ -160,7 +160,7 @@ class App extends Component {
             <div className="row">
               <div className="col-5">
                 <h2 className="content__title  dark-white">
-                  Konvoy <span>Command</span> Explorer
+                  DKP <span>Command</span> Explorer
                 </h2>
                 <p className="content__subtitle dark-grey">
                   Find the right commands you need without digging through the web.

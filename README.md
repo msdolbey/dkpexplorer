@@ -126,5 +126,7 @@ KonvoyExplorer is based on GitExplorer which is made by the awesome devs and des
 ### Roadmap
 
 Update everything to DKP
+
 Add the ability to add as many flags as possible
-Think about a way to not allow people to use conflicting flags that are not allowed in the product.
+
+Think about a way to not allow people to use conflicting flags that are not allowed in the product
