@@ -7,11 +7,9 @@ Table of Contents
 
 [Installation](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#installation)
 
-[Makers](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#makers)
-
 [Contribute](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#contribute)
 
-[Donate](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#donate)
+[Makers](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#makers-of-gitexplorer)
 
 [RoadMap](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#roadmap)
 
@@ -123,3 +121,10 @@ These three files are responsible for the options a user can pick.
 ### Makers of GitExplorer
 
 KonvoyExplorer is based on GitExplorer which is made by the awesome devs and designer at [Summitech](https://summitech.ng)
+
+### Roadmap
+
+Update everything to DKP
+Add the ability to add as many flags as possible
+Think about a way to not allow people to use conflicting flags that are not allowed in the product.
+
