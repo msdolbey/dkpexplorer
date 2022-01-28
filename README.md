@@ -1,22 +1,22 @@
 # KonvoyExplorer
 Table of Contents
 
-[Intro](https://github.com/natmegs/gitexplorer/blob/master/README.md#intro)
+[Intro](https://github.com/msdolbey/dkpexplorer#intro)
 
-[Tech Stack](https://github.com/natmegs/gitexplorer/blob/master/README.md#tech-stack)
+[Tech Stack](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#tech-stack)
 
-[Installation](https://github.com/natmegs/gitexplorer/blob/master/README.md#installation)
+[Installation](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#installation)
 
-[Makers](https://github.com/natmegs/gitexplorer/blob/master/README.md#makers)
+[Makers](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#makers)
 
-[Contribute](https://github.com/natmegs/gitexplorer/blob/master/README.md#contribute)
+[Contribute](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#contribute)
 
-[Donate](https://github.com/natmegs/gitexplorer/blob/master/README.md#donate)
+[Donate](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#donate)
 
-[RoadMap](https://github.com/natmegs/gitexplorer/blob/master/README.md#roadmap)
+[RoadMap](https://github.com/msdolbey/dkpexplorer/blob/main/README.md#roadmap)
 
 ### Intro
-At Corona Hackathon, we came across git explorer: [Click to find the right git commands without digging through the web.](https://gitexplorer.com). This was based on [Sarah Drasner's array explorer](https://github.com/sdras/array-explorer). It is a really cool resource for anyone to easily figure out the best JS array method to use. We loved it and decided to build something similar for Konvoy.
+At a D2iQ Hackathon, we came across git explorer: [Click to find the right git commands without digging through the web.](https://gitexplorer.com). This was based on [Sarah Drasner's array explorer](https://github.com/sdras/array-explorer). It is a really cool resource for anyone to easily figure out the best JS array method to use. We loved it and decided to build something similar for Konvoy. And now DKP.
 
 Explore and Enjoy! 
 
@@ -26,13 +26,14 @@ Explore and Enjoy!
 - Netlify
 
 ### Installation
+
 ```
 yarn (Install all dependencies)
 
 yarn start
 ```
 
-To try KonvoyExplorer in a docker container, run this:
+To try DKPExplorer in a docker container, run this:
 
 ```
 docker-compose up
@@ -40,7 +41,7 @@ docker-compose up
 
 ### Contribute
 
-Thank you for contributing to KonvoyExplorer!
+Thank you for contributing to DKPExplorer!
 
 Please follow the below instructions to send a Pull Request (Search the website to make sure that this command doesn't already exist).
 
@@ -54,69 +55,70 @@ These three files are responsible for the options a user can pick.
 
 ###### Steps to add a new command
 
-0. Please ensure you are not on the master branch. Checkout to a new branch entirely.
-1. Add an object to the array in the `primary-options.js` file. Sample Format:
+1.  Please ensure you are not on the main branch. Checkout to a new branch entirely.
 
-```
- { value: 'show', label: 'show/view' }
-```
+1.  Add an object to the array in the `primary-options.js` file. Sample Format:
 
-2. Add an array to the `secondary-options` file. Sample Format:
+    ```
+    { value: 'show', label: 'show/view' }
+    ```
 
-```
-show: [
-    {
-      value: 'repo-status',
-      label: 'status of project including staged, unstaged and untracked files',
-      usage: 'git status'
-      nb: 'To know about this command, "run git status --help"'
-    },
-    {
-      value: 'logs',
-      label: 'commit logs/history'
-    },
-```
+1.  Add an array to the `secondary-options` file. Sample Format:
+
+    ```
+    show: [
+        {
+          value: 'repo-status',
+          label: 'status of project including staged, unstaged and untracked files',
+          usage: 'git status'
+          nb: 'To know about this command, "run git status --help"'
+        },
+        {
+          value: 'logs',
+          label: 'commit logs/history'
+        },
+    ```
   
-  The `nb` is optional. It is responsible for what the user sees in the notes section. 
+    The `nb` is optional. It is responsible for what the user sees in the notes section. 
+
+    `\n` is used to insert newline.
   
-  `\n` is used to insert newline.
+1.  To add tertiary options, remove the `usage` and `nb` key/value pair for that command in the `secondary-options.js` file e.g..
   
-  3. To add tertiary options, remove the `usage` and `nb` key/value pair for that command in the `secondary-options.js` file e.g..
-  
+    ```
+    show: [
+        {
+          value: 'logs',
+          label: 'commit logs/history'
+        },
    ```
-   show: [
-       {
-         value: 'logs',
-         label: 'commit logs/history'
-       },
-  ```
-  
-  then supply `tertiary-options.js` file the necessary data e.g.
 
-  ```
-  logs: [
-    {
-      value: 'all',
-      label: 'all',
-      usage: 'git log',
-      nb: 'Type q in the terminal to exit the logs'
-    },
-    {
-      value: 'last-n-commit',
-      label: 'for last xxx number of commits',
-      usage: 'git log -n',
-      nb: 'Replace n with number of commits e.g. git log -2'
-    },
-    {
-      value: 'particular-period',
-      label: 'since a particular period',
-      usage: 'git log --since=period',
-      nb: 'Replace period with intended timeframe e.g git log --since=3days. You can use dates like 2018-12-31.\n\n Similar flags are --until, --before, --after'
-    }
-  ]
-  ```
+   then supply `tertiary-options.js` file the necessary data e.g.
 
-4. Once you are done, add, commit, push and create a PR to Master.
+   ```
+   logs: [
+     {
+       value: 'all',
+       label: 'all',
+       usage: 'git log',
+       nb: 'Type q in the terminal to exit the logs'
+     },
+     {
+       value: 'last-n-commit',
+       label: 'for last xxx number of commits',
+       usage: 'git log -n',
+       nb: 'Replace n with number of commits e.g. git log -2'
+     },
+     {
+       value: 'particular-period',
+       label: 'since a particular period',
+       usage: 'git log --since=period',
+       nb: 'Replace period with intended timeframe e.g git log --since=3days. You can use dates like 2018-12-31.\n\n Similar flags are --until, --before, --after'
+     }
+   ]
+   ```
+
+1.  Once you are done, add, commit, push and create a PR to Master.
 
 ### Makers of GitExplorer
 
