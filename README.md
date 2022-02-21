@@ -117,7 +117,7 @@ These three files are responsible for the options a user can pick.
     ]
     ```
 
-1.  Once you are done, add, commit, push and create a PR to Master.
+1.  Once you are done, add, commit, push, and create a PR to Master.
 
 ### Makers of GitExplorer
 
