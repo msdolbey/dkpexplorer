@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Footer, Nav } from 'components';
 import Typist from 'react-typist';
 import { isMobile } from 'react-device-detect';
-import { optionsFirst, optionsSecond, optionsThird } from 'data';
+import { optionsFirst, optionsSecond, optionsThird, optionsFourth } from 'data';
 import Select from 'react-select';
 import clipboard from 'assets/images/clipboard.svg';
 import classnames from 'classnames';
